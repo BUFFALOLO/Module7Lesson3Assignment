@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complete Form Example</title>
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Please provide your Email</legend>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Please provide a quantity</legend>
+
+            <label for=""quantity">Quantity:</label>
+            <input type="number" id="number" name="number" placeholder="1 - 100" min="1" max="100" step="1">
+
+            <button type="submit">Submit</button>
+        </fieldset>
+
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Please choose a date</legend>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" placeholder="date">
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Please provide a rating (1 to 10)</legend>
+
+            <label for="range">Rating:</label>
+            <input type="range" id="range" name="range" min="1" max="10" step="1" value="5" list="markers">
+
+            <datalist id="markers">
+                <option value="0"></option>
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="10"></option>
+              </datalist>
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Please select a color</legend>
+
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color" value="#7c1890">
+
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>User Programming Experience</legend>
+
+            <label for="favoritelanguage">What is your favorite programming language?:</label>
+            <select name="favorite-language" id="language-select">
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="css">CSS</option>
+                <option value="html5">HTML5</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <br>
+            <label for="experience">How many years of programming experience do you have?:</label>
+            <input type="radio" id="beginner" name="experience" value="beginner">
+            <label for="beginner">Beginner</label>
+            <input type="radio" id="intermediate" name="experience" value="intermediate">
+            <label for="intermediate">Intermediate</label>
+            <input type="radio" id="advanced" name="experience" value="advanced">
+            <label for="advanced">Advanced</label>
+            <br>
+            <br>
+            <label for="favoriteplatform">What is your favorite development platform?:</label>
+            <label for="web">Web</label>
+            <input type="checkbox" id="web" name="web" value="web">
+            <label for="mobile">Mobile</label>
+            <input type="checkbox" id="mobile" name="mobile" value="mobile">
+            <label for="desktop">Desktop</label>
+            <input type="checkbox" id="desktop" name="desktop" value="desktop">
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+    </fieldset>
+    </form>
+
+    <div role="alert" aria-live="assertive" id="error-message">
+        Please fill out all required fields
+    </div>
+</body>
+</html>
